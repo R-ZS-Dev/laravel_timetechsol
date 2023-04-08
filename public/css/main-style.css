@@ -822,6 +822,7 @@
     text-align: center;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
+    padding: 30px 0px 0px 0px;
 }
 .zig_zag_shape:hover{
     background-color: #fd7e14;
@@ -876,8 +877,8 @@
 
 .readamorprc{
     text-decoration: none;
-    color: #07249e;
-    border: 1px solid #07249e;
+    color: white;
+    background:  #07249e;
     padding: 15px;
     font-size: var(--font-size-small);
     border-radius: 5px;

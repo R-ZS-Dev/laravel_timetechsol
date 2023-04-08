@@ -1,0 +1,19 @@
+@extends('layouts.frontend.main')
+@section('cssLinks')
+    <link rel="stylesheet" href="{{ asset('css/main-style.css') }}">
+@endsection
+@section('mainContent')
+    <x-main-slider></x-main-slider>
+    <x-our-services></x-our-services>
+    <x-seo-score></x-seo-score>
+    <x-web-marketing></x-web-marketing>
+    <x-portfolio></x-portfolio>
+    <x-our-team></x-our-team>
+    <x-about-us></x-about-us>
+    <x-our-packages></x-our-packages>
+    <x-client-feedback></x-client-feedback>
+    <x-latest-blog></x-latest-blog>
+    <x-project-logo-bar></x-project-logo-bar>
+@endsection
+@section('jsLinks')
+@endsection

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/blog', function () {
-    return view('blog');
-});
-
-Route::get('/blog-detail', function () {
-    return view('blog-detail');
+Route::controller(PagesController::class)->group(function(){
+    Route::get('/', 'index_page')->name('index_page');
+    Route::get('blogs', 'blog_page')->name('blog_page');
+    Route::get('blog/{slug}', 'blog_detail_page')->name('blog_detail_page');
 });
