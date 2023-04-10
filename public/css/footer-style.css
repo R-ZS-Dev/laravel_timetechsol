@@ -1,0 +1,258 @@
+/* Main Body CSS */
+* {
+    font-family: var(--default-font-family);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 35px !important;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  :root{
+    --text-white-color: #ffffff;
+    --text-black-color: #111111;
+    --text-orange-color: #ff9317;
+    --text-gray-color: #646464;
+    --bg-color-offwhite: #f8f8f8;
+    --button-bg-color: linear-gradient(to right, #ff5917, #ff9317);
+    --margin-top-section: 87px;
+    --font-size-xxxlarge: 36px;
+    --font-size-xxlarge: 30px;
+    --font-size-xlarge: 20px;
+    --font-size-large: 18px;
+    --font-size-medium: 16px;
+    --font-size-small: 14px;
+    --font-size-xsmall: 12px;
+  }
+
+  /* Footer CSS Start */
+
+.fotone{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #07249e;
+    color: var(--text-white-color);
+    padding: 20px;
+}
+
+.thirecns{
+    display: flex;
+    flex-basis: 22%;
+    justify-content: space-around;
+}
+.thirecns img{
+    margin-top: 13px;
+}
+.thirecns div{
+    height: 70px;
+}
+
+.radiousmg{
+    border-radius: 50%;
+}
+
+.mainfooter{
+    background-color: #090d61;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.fotleft{
+    flex-basis: 20%;
+}
+
+.leftstxt{
+    color: #ceced0;
+}
+
+.foticn{
+    border-radius: 50%;
+    padding: 2%;
+    background-color: var(--text-white-color);
+    margin: 5px;
+}
+
+.fotcentone{
+    flex-basis: 20%;
+    color: var(--text-white-color);
+}
+
+.lineserv{
+    width: 50px;
+    float: left;
+    border: none;
+    outline-color: var(--text-orange-color);
+    height: 4px;
+    background-color: var(--text-orange-color);
+}
+
+.fotlnkcol{
+    color: var(--text-white-color);
+}
+
+.fotcentwo{
+    flex-basis: 20%;   
+}
+
+.fotcenthre{
+    flex-basis: 20%;
+}
+.footer_message{
+    display: inline-block;
+}
+.getquo{
+    color: var(--text-white-color);
+}
+
+.lnkpad{
+    margin-top: 20px;
+}
+
+.dectxt{
+    text-decoration: none;
+}
+
+.fotwhite{
+    color: var(--text-white-color);
+}
+
+.fotenpp{
+    padding: 2%;
+}
+
+.copycol{
+    color: var(--text-white-color);
+}
+
+.fotbgcl{
+    background-color: #090d61;
+    text-align: center;
+    margin-top: -11px;
+    padding-top: 40px;
+}
+
+.bgbluen{
+    background-color: #090d61;
+    display: inline-block;
+}
+
+.emailfomrat{
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.tmsgformt{
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.contentfot {
+    animation: moveright 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 320px;
+    background-color: var(--text-white-color);
+}
+
+.btnfot {
+    display: flex;
+    background: var(--text-white-color);
+    border-radius: 6px;
+    border: none;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color:  var(--text-orange-color);
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+    width: 220px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.rightfot {
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: block;
+    width: 18px;
+    height: 20px;
+    border: 3px solid #ff9317;
+    margin-top: 5px;
+}
+
+.rightfot:after {
+    content: '';
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 0.2em;
+    height: 0.2em;
+    border-top: 0.2em solid #ff9317;
+    border-right: 0.2em solid #ff9317;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.acol{
+    color: #090d61;
+}
+
+@media only screen and (max-width: 1024px){
+    .thirecns{
+        flex-basis: 28%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .thirecns{
+        flex-basis: 38%;
+    }
+    .fotcentone{
+        flex-basis: 30%;
+    }
+    .fotleft{
+        flex-basis: 60%;
+    }
+    .fotcentwo{
+        margin-top: 30px;
+        flex-basis: 50%;   
+    }
+    .fotcenthre{
+        margin-top: 30px;
+        flex-basis: 42%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+   .thirecns{
+    flex-basis: 80%;
+   }
+   .fotleft{
+    flex-basis: 80%;
+   }
+   .fotcentone{
+    flex-basis: 80%;
+   }
+   .fotcentwo{
+    flex-basis: 80%;
+   }
+   .fotcenthre{
+    flex-basis: 80%;
+   }
+}
+
+/* Footer CSS End */

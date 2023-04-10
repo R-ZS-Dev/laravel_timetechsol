@@ -1,0 +1,149 @@
+/* Main Body CSS */
+* {
+    font-family: var(--default-font-family);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 35px !important;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* Variable */
+
+  :root{
+    --text-white-color: #ffffff;
+    --text-black-color: #111111;
+    --text-orange-color: var(--text-orange-color);
+    --button-bg-color: linear-gradient(to right, #ff5917, #ff9317);
+    --margin-top-section: 87px;
+    --font-size-xlarge: 20px;
+    --font-size-large: 18px;
+    --font-size-medium: 16px;
+    --font-size-small: 14px;
+    --font-size-xsmall: 12px;
+  }
+
+.nav {
+    height: var(--margin-top-section);
+    width: 100%;
+    position: relative;
+    position: fixed;
+    background: #220f68;
+    box-shadow: 0px 0px 10px 0px grey;
+    z-index: 9999;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    margin-top: 23px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 7px 10px 0px 10px;
+    text-decoration: none;
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--text-white-color);
+    letter-spacing: 0.5px;
+  }
+  
+  .nav > .nav-links > a:hover {
+    color: var(--text-orange-color);
+    transition: 0.4s;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+  .logo-img{
+    width: 130px;
+    height: 50px;
+    padding: 10px 12px 30px;
+  }
+  
+  @media (max-width:768px) {
+    .nav {
+      height: 55px;
+    }
+    .logo-img {
+      width: 100px;
+      padding: 2px 1px 0px;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn {
+        float: right;
+      }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 30px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(72vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+  @media (max-width:425px) {
+    .nav {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 375px){
+  .nav {
+    width: 100%;
+  }
+}
