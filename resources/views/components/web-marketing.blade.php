@@ -1,6 +1,6 @@
 <div class='webdisplay'>
     <div class='webmark1'>
-        <Image class='marktimgsiz' src='upload/image/resizeimg2.png' height='500' width='500' alt=""/>
+        <img class='marktimgsiz' src='upload/image/resizeimg2.png' height='500' width='500' alt=""/>
     </div>
     <div class='webmark2'>
         <div class='webmarpp'>

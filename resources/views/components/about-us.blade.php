@@ -1,7 +1,7 @@
-<section id="about-us">
+<section id="about">
             <div class='fullopti'>
                 <div class='tophalf'>
-                    <Image class='imgcnt' src='upload/image/optipic.png' height='400' width='500' alt="" />
+                    <img class='imgcnt' src='upload/image/optipic.png' height='400' width='500' alt="" />
                 </div>
                 <div class='btmhalf'>
                     <div class='towline'>

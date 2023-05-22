@@ -1,4 +1,4 @@
-<section id="pricing-plan">
+<section id="plan">
             <div class='priourser'>
                 <h1 class='primcent'>Our Pricing Plan</h1>
                 <div class='pritxtcen'>The price of success is hard work, dedication to the job at hand, and the determination that whether we win or lose, we</div>

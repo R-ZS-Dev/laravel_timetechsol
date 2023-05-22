@@ -1,10 +1,10 @@
       <div class='fullcli'>
         <div class='tophalfcli'>
-          <Image src='/upload/image/testimonial1.jpg' height='450' width='500' alt="" />
+          <Img class="testmon_size" src='/upload/image/testimonial1.jpg' height='450' width='500' alt="" />
         </div>
         <div class='btmhalfcli'>
           <h1 class="feedback-center">FeedBack</h1>
-          <div id="slider">
+          {{-- <div id="slider">
             <ul>
               <li>
               <div class="slider-container">
@@ -37,7 +37,7 @@
               </div>
               </li>
             </ul>
-          </div>
+          </div> --}}
 
           <!-- <div class='towlinecli'>
             <h1 class='getyourcli'>Clients Feedback</h1>

@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 /* Main Body CSS */
 * {
     font-family: var(--default-font-family);
@@ -20,6 +23,7 @@
     --text-orange-color: #ff9317;
     --text-gray-color: #646464;
     --bg-color-offwhite: #f8f8f8;
+    --bg-color-blue: #220f68;
     --button-bg-color: linear-gradient(to right, #ff5917, #ff9317);
     --margin-top-section: 87px;
     --font-size-xxxlarge: 36px;
@@ -190,15 +194,9 @@
     transform: rotate(45deg);
 }
 
-/* @media only screen and (max-width: 1024px){
-    .servies {
-        width: 31%;
-    }
-} */
-
 @media only screen and (max-width: 768px){
     .servies {
-        width: 45%;
+        width: 47% !important;
     }
     .txtcen{
         font-size: var(--font-size-small);
@@ -213,7 +211,7 @@
 
 @media only screen and (max-width: 425px){
     .servies {
-        width: 80%;
+        width: 80% !important;
     }
 }
 
@@ -246,7 +244,7 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
-  .servies:hover {
+  /* .servies:hover {
     box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
   }
 
@@ -343,7 +341,7 @@
       top: -5px;
       right: 0;    
     }
-  }
+  } */
 
 
 /* Seo-Score */
@@ -636,6 +634,7 @@
     border-radius: 5px 5px 0 0;
     height: 220px;
     width: 373px;
+    margin-top: 7px;
   }
   
 .readamor1{
@@ -666,6 +665,12 @@
     }
 }
 
+@media only screen and (max-width: 375px){
+    .crdicn1 {
+        width: 335px;
+    }
+}
+
 /* Portfolio Hover Effect */
   .box-display {
     display:flex;
@@ -673,26 +678,81 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .box-ani {
+  .box-ani-port {
     background-color: var(--text-white-color);
     margin-top: 2%;
     flex-basis: 32%;
     transition:.2s all;
   }
-  .box-display:hover .box-ani {
-    filter:blur(3px);
-    opacity:.5;
-    transform: scale(.98);
-    box-shadow:none;
-  }
-  .box-display:hover .box-ani:hover{
-    transform:scale(1);
-    filter:blur(0px);
-    opacity:1;
-    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
-  }
 
 /* Portfolio Hover End */
+
+/* Portfolio new Hover Start */
+
+.box-ani-port{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.box-ani-port:hover:before{ transform: scale(1); }
+.box-ani-port {
+   transition: all 0.4s ease 0s;
+}
+.box-ani-port:hover { filter: grayscale(80%); }
+
+.box-ani-port .blg-icon-port{
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    background-color: var(--bg-color-blue);
+    transition: all 0.3s ease 0.2s;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+}
+.box-ani-port .blg-icon-port img{
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+    filter: invert(1);
+}
+.box-ani-port:hover .blg-icon-port{
+    opacity: 1;
+    top: 62%;
+}
+.box-ani-port .blg-icon-port a{
+    background-color: #ffee00;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    transition: all 0.35s;
+    margin: 0 3px;
+    display: inline-block;
+}
+.box-ani-port .blg-icon-port a:hover{
+    background: var(--text-white-color);
+    /* text-shadow: 3px 3px 1px rgba(0, 0, 0, .3); */
+}
+
+/* Portfolio Hover CSS End */
+
+@media only screen and (max-width: 768px){
+    .box-ani-port{
+        flex-basis: 48%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .box-ani-port {
+        flex-basis: 87%;
+    }
+}
 
 /* Protfolio CSS End */
 
@@ -724,7 +784,7 @@
     padding-bottom: 30px;
 }
 
-.cardrec {
+.cardrec {    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     flex-basis: 22%;
@@ -733,15 +793,16 @@
     text-align: center;
     background-color: var(--text-white-color);
     margin-top: 3%;
+    border-radius: 20px;
   }
   
   .cardrec:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  .cardrec Image {
+  /* .cardrec Img {
     border-radius: 5px 5px 0 0;
-  }
+  } */
 
   .crdicnrec{
     border-radius: 50%;
@@ -753,7 +814,10 @@
 }
 
 .icnp{
-    padding: 5%;
+    /* padding: 5%; */
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
 }
 
 .icnp:hover {
@@ -761,7 +825,11 @@
 }
 
 .mrtp{
-    margin-top: 5%;
+     /* margin-top: 5%; */
+     display: flex;
+     /* justify-content: space-evenly; */
+     justify-content: center;
+     gap: 20px;
 }
 
 .bmrg{
@@ -907,6 +975,12 @@
 @media only screen and (max-width: 425px){
     .imgcnt{
         width: 400px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .imgcnt{
+        width: 360px;;
     }
 }
 
@@ -1127,6 +1201,10 @@
     height: 400px;
     text-align: center;
 }
+.testmon_size{
+    height: 450px;
+    width: 500px;
+}
 .feedback-center{
     text-align: center;
     font-size: 5vh;
@@ -1176,7 +1254,25 @@
         width: 400px;
     }
     .slider-container{
-    width: 400px;
+        width: 400px;
+    }
+    .testmon_size {
+        height: 380px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .testmon_size {
+        height: 340px;
+        width: 360px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .testmon_size {
+        height: 285px;
+        width: 305px;
     }
 }
 
@@ -1410,12 +1506,12 @@
     justify-content: space-around;
 }
 
-.brandspacing Image{
+.brandspacing img{
     flex-basis: 18%;
 }
 
 .imgboxs{
-    padding: 15px;
+    padding: 10px;
     transition: transform .9s;
 }
 

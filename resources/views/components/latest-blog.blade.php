@@ -1,4 +1,4 @@
-<section id="latest-blog">
+<section id="latestblog">
             <div class='priourlser'>
                 <h1 class='primlser'>Our Latest Blogs</h1>
                 <div class='pritxtlser'>We must not be misled by left-wing incompetent news media that, day after day, feed us a diet of fantasy telling us we</div>
@@ -8,7 +8,7 @@
             <div class='centerlets'>
                 <div class="cardlets">
                     <div class='blg-box'>
-                        <Image src='/upload/image/blog.jpg' width='340' height='250' alt='' ></Image>
+                        <img src='/upload/image/blog.jpg' width='340' height='250' alt='' />
                         <div class='datfile'>
                             <p>july 15, 2023</p>
                             <p>Search Blocking</p>
@@ -28,7 +28,7 @@
                 </div>
                 <div class='cardlets'>
                     <div class='blg-box'>
-                        <Image src='/upload/image/blog1.jpg' width='340' height='250' alt='' ></Image>
+                        <img src='/upload/image/blog1.jpg' width='340' height='250' alt='' />
                         <div class='datfile'>
                             <p>july 15, 2023</p>
                             <p>Search Blocking</p>
@@ -49,7 +49,7 @@
 
                 <div class='cardlets'>
                     <div class='blg-box'>
-                        <Image src='/upload/image/blog2.jpg' width='340' height='250' alt='' ></Image>
+                        <img src='/upload/image/blog2.jpg' width='340' height='250' alt='' />
                         <div class='datfile'>
                             <p>july 15, 2023</p>
                             <p>Search Blocking</p>

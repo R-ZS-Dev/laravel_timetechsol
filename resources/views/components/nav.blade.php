@@ -13,12 +13,12 @@
 
   <div class="nav-links">
     <a href="{{ route('index_page') }}">Home</a>
-    <a href="">Services</a>
-    <a href="">Portfolio</a>
-    <a href="">About</a>
-    <a href="">Team</a>
-    <a href="">Plans</a>
-    <a href="">Latest Blogs</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#team">Team</a>
+    <a href="#plan">Plans</a>
+    <a href="#latestblog">Latest Blogs</a>
     <a href="{{ route('blog_page') }}">Blog</a>
   </div>
 </div>
